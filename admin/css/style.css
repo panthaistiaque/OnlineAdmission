@@ -1,0 +1,281 @@
+hr {
+    border-top: 2px solid #c2ced4 !important;
+}
+.panel-table .panel-body .table-list>tbody>tr>td{
+    text-align: center!important;
+}
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #FFF;
+    color: #fff;
+    text-align: left;
+    margin-left: 220px;
+    background-image: linear-gradient(#4CAF50, rgb(134, 126, 249));
+}
+.admission-table>tbody>tr>th{
+    text-align: right!important;
+
+}
+.admission-table>tbody>tr>th,.admission-table>tbody>tr>td{
+    vertical-align :unset!important;
+
+}
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: #ebedef;
+}
+
+.well {
+    border-radius: opx !important;
+    border: none!important;
+    background-color: #fff !important;
+}
+
+.main {
+    margin-left: 220px;
+    padding: 0px;
+}
+
+.nav-side-menu {
+    z-index: 2000;
+    overflow: auto;
+    background-color: #454294;
+    position: fixed;
+    top: 0px;
+    background-image: linear-gradient(#4CAF50, rgb(134, 126, 249));
+    width: 220px;
+    height: 100%;
+    color: #e1ffff;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+.nav-side-menu .brand {
+    background-color: #fff;
+    line-height: 50px;
+    display: block;
+    text-align: center;
+    font-size: 14px;
+}
+
+.nav-side-menu .toggle-btn {
+    display: none;
+}
+
+.nav-side-menu ul,
+.nav-side-menu li {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    line-height: 4rem;
+    cursor: pointer;
+    visibility: visible !important;
+}
+
+/*
+    .collapsed{
+       .arrow:before{
+                 font-family: FontAwesome;
+                 content: "\f053";
+                 display: inline-block;
+                 padding-left:10px;
+                 padding-right: 10px;
+                 vertical-align: middle;
+                 float:right;
+            }
+     }
+*/
+.nav-side-menu ul :not(collapsed) .arrow:before,
+.nav-side-menu li :not(collapsed) .arrow:before {
+    font-family: FontAwesome;
+    content: "\f078";
+    display: inline-block;
+    padding-left: 10px;
+    padding-right: 10px;
+    vertical-align: middle;
+    float: right;
+}
+
+.nav-side-menu li i.sidebar-icon {
+    margin-right: 0.6rem;
+    font-size: 1.5em;
+}
+
+.nav-side-menu ul .active,
+.nav-side-menu li .active {
+    border-left: 3px solid #e1ffff;
+    background-color: #4f5b69;
+}
+
+.nav-side-menu li {
+    padding-left: 0px;
+    border-left: 3px solid #231f87;
+    /* border-bottom: 1px solid #231f87; */
+}
+
+.nav-side-menu li a {
+    display: block;
+    text-decoration: none;
+    color: #e1ffff;
+}
+
+.nav-side-menu li a i {
+    padding-left: 10px;
+    width: 20px;
+    padding-right: 20px;
+}
+
+.nav-side-menu li:hover {
+    border-left: 3px solid #e1ffff;
+    background-color: #231f87;
+    -webkit-transition: all .6s ease;
+    -moz-transition: all .6s ease;
+    -o-transition: all .6s ease;
+    -ms-transition: all .6s ease;
+    transition: all .6s ease;
+}
+
+.nav-side-menu ul .sub-menu li.active,
+.nav-side-menu li .sub-menu li.active {
+    background-color: #000;
+}
+
+.nav-side-menu ul .sub-menu li,
+.nav-side-menu li .sub-menu li {
+    background-color: #231f87;
+    border: none;
+    line-height: 3.4rem;
+    border-bottom: 1px solid #454294;
+    margin-left: 0px;
+}
+
+.nav-side-menu ul .sub-menu li:hover,
+.nav-side-menu li .sub-menu li:hover {
+    background-color: #0c095d;
+}
+
+.nav-side-menu li .sub-menu li a,
+.nav-side-menu ul .sub-menu li a {
+    display: block;
+    padding-left: 20px;
+}
+
+.nav-side-menu ul .sub-menu li a i,
+.nav-side-menu li .sub-menu li a i {
+    padding-right: 10px !important;
+}
+
+@media (max-width: 767px) {
+    .main {
+        margin-left: 0 !important;
+        padding: 0 15px 15px 15px;
+    }
+
+    .nav-side-menu {
+        position: relative;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .nav-side-menu .toggle-btn {
+        display: block;
+        cursor: pointer;
+        position: absolute;
+        right: 10px;
+        top: 7px;
+        z-index: 10 !important;
+        padding: 3px;
+        width: 40px;
+        text-align: center;
+        background-color: #231f87;
+        border-radius: 4px;
+    }
+
+    .brand {
+        text-align: left !important;
+        font-size: 22px;
+        padding-left: 20px;
+        line-height: 50px !important;
+    }
+}
+
+@media (min-width: 767px) {
+    .nav-side-menu .menu-list .menu-content {
+        display: block;
+    }
+}
+
+.panel-table .panel-body {
+    padding: 0;
+}
+
+.panel-table .panel-body .table-bordered {
+    border-style: none;
+    margin: 0;
+}
+
+.panel-table .panel-body .table-bordered>thead>tr>th:first-of-type {
+    text-align: center;
+    width: 100px;
+}
+
+.panel-table .panel-body .table-bordered>thead>tr>th:last-of-type,
+.panel-table .panel-body .table-bordered>tbody>tr>td:last-of-type {
+    border-right: 0px;
+}
+
+.panel-table .panel-body .table-bordered>thead>tr>th:first-of-type,
+.panel-table .panel-body .table-bordered>tbody>tr>td:first-of-type {
+    border-left: 0px;
+}
+
+.panel-table .panel-body .table-bordered>tbody>tr:first-of-type>td {
+    border-bottom: 0px;
+}
+
+.panel-table .panel-body .table-bordered>thead>tr:first-of-type>th {
+    border-top: 0px;
+}
+
+.panel-table .panel-footer .pagination {
+    margin: 0;
+}
+
+/*
+  used to vertically center elements, may need modification if you're not using default sizes.
+  */
+.panel-table .panel-footer .col {
+    line-height: 34px;
+    height: 34px;
+}
+
+.panel-table .panel-heading .col h3 {
+    line-height: 30px;
+    height: 30px;
+}
+
+.panel-table .panel-body .table-bordered>tbody>tr>td {
+    line-height: 34px;
+}
+
+.modal-content{
+    border-radius: 0px;
+}
+
+.modal-header {
+
+    background-color: #337AB7;
+    padding: 16px 16px;
+    color: #FFF;
+    border-bottom: 2px dashed #337AB7;
+
+}
+button:disabled,
+button[disabled]{
+  border: 1px solid #999999;
+  background-color: #cccccc;
+  color: #666666;
+}
